@@ -1,0 +1,151 @@
+/* Responsive and Attractive CSS for FAQs Section */
+
+/* General Styling */
+.section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Section Title Styling */
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Accordion Styling */
+.accordion {
+    margin-top: 30px;
+}
+
+.card {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 15px;
+}
+
+.card-header h5 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.card-body {
+    font-size: 16px;
+    color: #555;
+    padding: 15px;
+}
+
+/* Arrow Icon */
+.card-header:after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f107';
+    float: right;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.card-header.collapsed:after {
+    content: '\f106';
+}
+
+/* Responsive Styling */
+@media (max-width: 1199px) {
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .section-title p {
+        font-size: 15px;
+    }
+
+    .card-header h5 {
+        font-size: 16px;
+    }
+
+    .card-body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .section-title p {
+        font-size: 14px;
+    }
+
+    .card-header h5 {
+        font-size: 15px;
+    }
+
+    .card-body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .section-title p {
+        font-size: 13px;
+    }
+
+    .card-header h5 {
+        font-size: 14px;
+    }
+
+    .card-body {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-title h2 {
+        font-size: 20px;
+    }
+
+    .section-title p {
+        font-size: 12px;
+    }
+
+    .card-header h5 {
+        font-size: 13px;
+    }
+
+    .card-body {
+        font-size: 12px;
+    }
+}
