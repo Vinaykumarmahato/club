@@ -858,7 +858,7 @@ body{
 	padding:120px 0;
 }
 .fun-facts{
-	background:url('/img/hand.jpg');
+	background:url('/img/no1.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
 }
@@ -1024,7 +1024,7 @@ body{
 	Start Call to action CSS
 =================================*/
 .call-action{
-	background-image:url('img/call-bg.jpg');
+	background-image:url('img/no3.jpg');
 	background-size:cover;
 	background-position:center;
 	position:relative;
