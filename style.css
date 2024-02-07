@@ -2,6 +2,19 @@
 /*=============================
 	Global CSS 
 ===============================*/
+.single-footer img {
+    margin-top: 20px;
+    width: 80px;
+    display: inline-block;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.single-footer img:hover {
+    transform: scale(1.1);
+}
+
+
 body{
     font-family: 'Poppins', sans-serif;
 	font-weight: 400;
