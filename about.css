@@ -1,0 +1,47 @@
+
+.about-us-class {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Slightly increased box shadow */
+    border-radius: 12px; /* Rounded corners for a softer look */
+}
+
+h1, h2, p {
+    color: #0056b3; /* Accent color for headings and text */
+}
+
+.highlights ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.highlights li {
+    margin-bottom: 20px; /* Increased spacing between list items */
+    display: flex;
+    align-items: center;
+}
+
+.highlights img {
+    max-width: 60px; /* Slightly larger images */
+    margin-right: 20px; /* Increased spacing between image and text */
+}
+
+.inclusivity {
+    margin-top: 30px; /* Increased margin for inclusivity section */
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    .highlights li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .highlights img {
+        margin-right: 0;
+        margin-bottom: 15px; /* Adjusted spacing for smaller screens */
+    }
+}
