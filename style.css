@@ -1,3 +1,71 @@
+/* FAQ Section */
+.faqs {
+  background-color: #f8f8f8; /* Set a background color */
+  padding: 80px 0; /* Add some padding for spacing */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px; /* Adjust the font size for the section title */
+  margin-bottom: 15px;
+}
+
+.section-title img {
+  max-width: 100%; /* Make sure the image doesn't overflow its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.faq-description {
+  font-size: 18px; /* Adjust the font size for the section description */
+  line-height: 1.5; /* Improve line spacing for readability */
+  margin-bottom: 30px;
+}
+
+.accordion .card {
+  margin-bottom: 15px;
+  border: none; /* Remove default card borders */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(11, 1, 1, 0.754); /* Add a subtle shadow effect */
+}
+
+.accordion .card-header {
+  background-color: #fff; /* Set a background color for the header */
+  border: none;
+}
+
+.accordion .card-header h5 {
+  font-size: 18px;
+}
+
+.accordion .card-body {
+  background-color: #fff; /* Set a background color for the body */
+  border-top: 1px solid #eee; /* Add a border between questions */
+}
+
+/* Optional: Add hover effect to buttons for better user experience */
+.accordion .card-header button:hover {
+  background-color: #652727;
+}
+
+/* Optional: Add transition for smoother animations */
+.accordion .card-body {
+  transition: background-color 0.3s ease;
+}
+
+.accordion .card-header button.collapsed::after {
+  content: '\002B'; /* Plus sign for collapsed buttons */
+  float: right;
+}
+
+.accordion .card-header button:not(.collapsed)::after {
+  content: '\2212'; /* Minus sign for expanded buttons */
+  float: right;
+}
 
 /*=============================
 	Global CSS 
@@ -209,6 +277,64 @@ body{
 /*===================
 	Start Header CSS 
 =====================*/
+/* Add this at the end of your CSS for responsiveness */
+@media (max-width: 767px) {
+    .header .top-link,
+    .header .top-contact,
+    .header .top-contact li {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+
+
+
+    .header .top-contact li {
+        margin-top: 10px;
+    }
+
+    .header .logo {
+        float: none;
+		max-width: 150px; /* Adjust the max-width according to your preference */
+
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header .nav {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header .nav li {
+        float: none;
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+
+    .header .nav li a {
+        padding: 15px 12px;
+    }
+
+    .header .search-form {
+        position: relative;
+        top: 0;
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header .search-form input,
+    .header .search-form button {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+}
+
 .header{
 	background-color:#fff;
 	position:relative;
@@ -248,7 +374,7 @@ body{
 .header .top-contact li{
 	display:inline-block;
 	margin-right:25px;
-	color:#2C2D3F;
+	color:#000001;
 }
 .header .top-contact li:last-child{
 	margin-right:0;
@@ -272,7 +398,7 @@ body{
 	margin-top:12px;
 }
 .get-quote .btn{
-	color:#fff;
+	color:#080101;
 }
 .header .logo {
 	float: left;
@@ -295,7 +421,7 @@ body{
 	margin:0;
 }
 .header .nav li a {
-	color: #2C2D3F;
+	color: #160409;
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: capitalize;
@@ -589,7 +715,7 @@ body{
 }
 .slider .single-slider .btn{
 	color:#fff;
-	background:#1a76d1;
+	background:#0a0103;
 	font-weight:500;
 	display:inline-block;
 	margin:0;
@@ -603,7 +729,7 @@ body{
 	color:#fff;
 }
 .slider .single-slider .btn.primary:before{
-	background:#1A76D1;
+	background:#020000c2;
 }
 .slider .owl-carousel .owl-nav {
 	margin: 0;
@@ -617,7 +743,7 @@ body{
 	width: 50px;
 	line-height: 50px;
 	text-align: center;
-	background: #1A76D1;
+	background: #230303d3;
 	color: #fff;
 	font-size: 26px;
 	position: absolute;
@@ -629,7 +755,7 @@ body{
 	border-radius: 50%;
 }
 .slider .owl-carousel .owl-nav div:hover{
-	background:#2C2D3F;
+	background:#010102;
 	color:#fff;
 }
 .slider .owl-carousel .owl-controls .owl-nav .owl-prev{
@@ -672,7 +798,7 @@ body{
 	text-align: left;
 	z-index:3;
 	border-radius:5px;
-	background:#1A76D1;
+	background:#37022296;
 	 -webkit-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
     -ms-transition: all .3s ease-out 0s;
@@ -695,7 +821,6 @@ body{
     margin: 0 auto;
     width: 80%;
     height: 90%;
-    background:#1A76D1;
     opacity: 0;
     filter: blur(10px);
     -webkit-transition: all .3s ease-out 0s;
@@ -812,7 +937,7 @@ body{
 .section-title h2 {
     font-size: 36px;
     font-weight: 700;
-    color: #333; /* Dark text color */
+    color: #130909; /* Dark text color */
     margin-bottom: 10px;
 }
 
@@ -824,7 +949,7 @@ body{
 
 .section-title p {
     font-size: 18px;
-    color: #555; /* Slightly darker text color */
+    color: #130a0a; /* Slightly darker text color */
     max-width: 600px;
     margin: 0 auto;
 }
@@ -853,7 +978,7 @@ body{
 .single-feature h3 {
     font-size: 24px;
     font-weight: 600;
-    color: #333; /* Dark text color */
+    color: #0b0707; /* Dark text color */
     margin-bottom: 10px;
 }
 
@@ -967,109 +1092,160 @@ body{
 /*===================
 	End Fun Facts
 =====================*/
-
 /*===================
-	Why choose CSS
+    Why choose CSS
 =====================*/
-.why-choose .choose-left h3{
-	font-size:24px;
-	font-weight:600;
-	color:#2C2D3F;
-	position:relative;
-	padding-bottom:20px;
-	margin-bottom:24px;
+.why-choose .choose-left h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2b0717;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 24px;
 }
-.why-choose .choose-left h3:before{
-	position:absolute;
-	content:"";
-	left:0;
-	bottom:0;
-	height:2px;
-	width:50px;
-	background:#1a76d1;
+
+.why-choose .choose-left h3:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60px;
+    background: #ff4d4d; /* Updated highlight color */
 }
-.why-choose .choose-left p{
-	margin-bottom:35px;
+
+.why-choose .choose-left p {
+    font-size: 16px;
+    color: #090205;
+    line-height: 1.6;
+    margin-bottom: 35px;
 }
-.why-choose .choose-left .list{}
+
+.why-choose .choose-left .list {}
+
 .why-choose .choose-left .list li {
-	color: #868686;
-	margin-bottom: 12px;
+    color: #1a0d0d;
+    margin-bottom: 12px;
+    list-style: none; /* Remove default list style */
+    position: relative;
 }
-.why-choose .choose-left .list li:last-child{
-	margin-bottom:0px;
+
+.why-choose .choose-left .list li i {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #ff4d4d; /* Updated icon background color */
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-right: 16px;
 }
-.why-choose .choose-left .list li i{
-	height:15px;
-	width:15px;
-	line-height:15px;
-	text-align:center;
-	background:#1a76d1;
-	color:#fff;
-	font-size:14px;
-	border-radius:100%;
-	padding-left:2px;
-	margin-right:16px;
-}
+
 /* Start Faq CSS */
-.why-choose{
-	background:#fff;
+.why-choose {
+    background: #f9f9f9; /* Updated background color */
+    padding: 60px 0;
 }
-.why-choose .choose-right{
-	height:100%;
-	width:100%;
-	background-image:url('img/video-bg.jpg');
-	background-size:cover;
-	background-position:center;
-	background-repeat:no-repeat;
-	position:relative;
+
+/* Choose Right Styles */
+.choose-right {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
-.why-choose .choose-right .video {
-	color: #fff;
-	height: 70px;
-	width: 70px;
-	line-height: 70px;
-	text-align: center;
-	border-radius: 100%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-left: -35px;
-	margin-top: -35px;
-	font-size: 21px;
-	background: #1a76d1;
-	padding-left: 4px;
+
+.video-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
 }
-.why-choose .choose-right .video:hover{
-	transform:scale(1.1);
+
+.video-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: #ff4d4d; /* Updated button background color */
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
-.why-choose .video-image .waves-block .waves {
-	position: absolute;
-	width: 200px;
-	height: 200px;
-	background: #fff;
-	opacity: 0;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	border-radius: 100%;
-	-webkit-animation: waves 3s ease-in-out infinite;
-	animation: waves 3s ease-in-out infinite;
-	left: 50%;
-	margin-left: -100px;
-	top: 50%;
-	margin-top: -100px;
+
+.video-popup:hover {
+    background: #fff;
+    color: #ff4d4d; /* Updated button hover color */
 }
-.why-choose .video-image .waves-block .wave-1 {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
+
+/* Thumbnail Styles */
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: opacity 0.3s ease-in-out;
 }
-.why-choose .video-image .waves-block .wave-2 {
-    -webkit-animation-delay: 1s;
+
+.choose-right:hover .video-thumbnail {
+    opacity: 0.8;
+}
+
+/* Waves Animation Styles */
+.waves-block {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ff4d4d; /* Updated wave color */
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.wave-1,
+.wave-2,
+.wave-3 {
+    animation: animateWave 1.5s linear infinite;
+}
+
+.wave-2 {
+    animation-delay: 0.5s;
+}
+
+.wave-3 {
     animation-delay: 1s;
 }
-.why-choose .video-image .waves-block .wave-3 {
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+
+@keyframes animateWave {
+    0%, 100% {
+        transform: scale(1, 0.5);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
 }
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .choose-right {
+        border-radius: 0;
+    }
+}
+
+
 /*=======================
 	End Why choose CSS
 =========================*/
@@ -3146,6 +3322,21 @@ body{
   font-size: 25px;
   color: #ffffff;
 }
+
+/* Add this CSS to your existing styles */
+.faq-description {
+	font-size: 18px; /* Adjust the font size for responsiveness */
+	line-height: 1.5; /* Improve line spacing for readability */
+	margin-bottom: 20px; /* Add some space at the bottom for better separation */
+  }
+  
+  /* Responsive typography for smaller screens */
+  @media (max-width: 767px) {
+	.faq-description {
+	  font-size: 16px;
+	}
+  }
+  
 /*=====================
    End Faq CSS
 =======================*/
