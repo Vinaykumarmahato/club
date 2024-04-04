@@ -1,3 +1,55 @@
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
+
+
+
+
 /* FAQ Section */
 .faqs {
   background-color: #f8f8f8; /* Set a background color */
@@ -1276,14 +1328,14 @@ body{
 	font-size: 15px;
 }
 .call-action .content .btn{
-	background:#fff;
+	background:#ffffff;
 	margin-right:20px;
 	font-weight:500;
 	border:1px solid #fff;
 	color:#1a76d1;
 }
 .call-action .content .btn:before{
-	background:#1A76D1;
+	background:#1429e8;
 }
 .call-action .content .btn:hover{
 	background:#1A76D1;
@@ -1299,7 +1351,7 @@ body{
 	color: #fff !important;
 }
 .call-action .content .second:before{
-	background:#fff;
+	background:#1429e8;
 }
 .call-action .content .second:hover{
 	color:#1A76D1;

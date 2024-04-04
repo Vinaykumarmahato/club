@@ -228,18 +228,27 @@
 				<div class="row">
 					<div class="col-lg-6 offset-lg-3 col-12">
 						<!-- Error Inner -->
-						<div class="error-inner">
-							<h1>404<span>Oop's  sorry we can't find that page!</span></h1>
-							<p>404 Error: Lost? Let's find the way back together.</p>
+						
 
-
-
-
-							<form class="search-form">
-								<input placeholder="Search from Here" type="text">
-								<button class="btn" type="submit"><i class="fa fa-search"></i></button>
+						<div class="container">
+							<h2>Become a member of DSCET SparkTech Club</h2>
+							<p>Fill out the application form below to apply for membership:</p>
+							<form action="submit_application.php" method="post">
+							  <label for="name">Name:</label><br>
+							  <input type="text" id="name" name="name" required><br>
+							  <label for="email">Email:</label><br>
+							  <input type="email" id="email" name="email" required><br>
+							  <label for="phone">Phone:</label><br>
+							  <input type="tel" id="phone" name="phone" required><br>
+							  <label for="message">Message:</label><br>
+							  <textarea id="message" name="message" rows="4" required></textarea><br>
+							  <input type="submit" value="Submit">
 							</form>
-						</div>
+						  </div>
+
+
+
+
 						<!--/ End Error Inner -->
 					</div>
 				</div>

@@ -431,7 +431,7 @@ Preloader Area CSS
 	font-size: 14px;
 	text-transform: capitalize;
 	font-weight: 500;
-	background: #a9aaab;
+	background: #154cf3;
 	position: relative;
 	box-shadow: none;
 	display: inline-block;
@@ -445,7 +445,7 @@ Preloader Area CSS
 	border-radius:4px;
 }
 .btn:hover{
-	color:#fff;
+	color:#69e71a;
 }
 .btn:before{
 	content: "";
@@ -455,7 +455,7 @@ Preloader Area CSS
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #2C2D3F;
+	background: #eeeff1;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
 	-webkit-transform-origin: 50%;
@@ -483,7 +483,7 @@ Preloader Area CSS
 	text-transform: capitalize;
 	margin-bottom: 24px;
 	position: relative;
-	color: #2C2D3F;
+	color: #2c3f2f;
 }
 .section-title p{
 	font-size:15px;

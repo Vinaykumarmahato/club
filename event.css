@@ -1,0 +1,105 @@
+/* Section Styles */
+.technical-events {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.technical-events .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technical-events .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.technical-events .section-title p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.single-event {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.single-event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.single-event h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.single-event p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.single-event ul {
+    padding: 0;
+    margin: 0;
+}
+
+.single-event ul li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.single-event ul li::before {
+    content: "\2022";
+    color: #007bff;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .technical-events .section-title p {
+        font-size: 16px;
+    }
+
+    .single-event {
+        padding: 30px;
+    }
+
+    .single-event h4 {
+        font-size: 20px;
+    }
+
+    .single-event p {
+        font-size: 14px;
+    }
+
+    .single-event ul li {
+        font-size: 14px;
+    }
+}
+/* Apply Now Button Styles */
+.single-event .btn {
+    display: inline-block;
+    background-color: #007bff; /* Change as per your design */
+    color: #ffffff; /* Change as per your design */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.single-event .btn:hover {
+    background-color: #0056b3; /* Change as per your design */
+}
