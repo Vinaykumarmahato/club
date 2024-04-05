@@ -103,3 +103,164 @@
 .single-event .btn:hover {
     background-color: #0056b3; /* Change as per your design */
 }
+
+
+.full-width-image-container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Section Styles */
+  #about.about {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #about.about:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  }
+  
+  #about.about .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #about.about .section-header {
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  #about.about .section-header p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  #about.about .position-relative {
+    position: relative;
+    margin-top: 40px;
+  }
+  
+  #about.about .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  #about.about .btn {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 30px;
+    padding: 12px 30px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  #about.about .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    #about.about {
+      padding: 80px 0;
+    }
+  
+    #about.about .section-header p {
+      font-size: 18px;
+    }
+  
+    #about.about .btn {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #about.about {
+      padding: 60px 0;
+    }
+  
+    #about.about .section-header p {
+      font-size: 16px;
+    }
+  
+    #about.about .btn {
+      font-size: 12px;
+      padding: 10px 20px;
+    }
+  }
+  /* Section Header Styles */
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .section-header p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333; /* Change the color as needed */
+  }
+  
+  .position-relative {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adjust as needed */
+  }
+  
+  
+  
+  
+  .btn {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0504;
+    background-color: #88f8f1f1; /* Adjust background color as needed */
+    border-radius: 30px;
+    padding: 12px 30px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 40%;
+  }
+  
+  .btn:hover {
+    background-color: #00b312; /* Adjust hover background color as needed */
+  }
+  
+  .free-label {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
